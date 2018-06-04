@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>首页</title>
+    <meta name="description" content="Description...">
+    <meta name="keywords" content="keyword1,keyword2,keyword3..">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="plugin/swiper3/css/swiper.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+    <script src="js/jquery-1.10.1.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="plugin/swiper3/js/swiper.min.js"></script>
+    <script src="plugin/swiper3/js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+    });
+    wow.init();	
+    </script>
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.min.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/vendors.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+    <script>
+		jQuery(function(){
+    		$('.counter').countUp();
+		})
+    </script>
+    <script>
+    	function scro(){
+			if($(document).scrollTop()>50){$(".headerBg").addClass("active");}else{$(".headerBg").removeClass("active");}
+		}
+		scro();
+		$(window).scroll(function(){
+			scro();
+		})
+    </script>
+</head>
+<body>
+<header class="headerBg navbar-fixed-top">
+	<div class="container-fluid">
+    	<div class="logo"><a href="#"><img src="images/logo.png" class="img-responsive" alt=""></a></div>
+        <div class="menuBtn">
+        	<span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hdRig">
+            <ul class="hdRigList list-unstyled">
+                <li><a class="hdTel" href="tel:010-52722366"><i class="fa fa-phone"></i></a><span>010-52xxxx366</span></li>
+                <li><a class="hdShare" href="javascript:;"><i class="fa fa-weibo"></i></a></li>
+                <li><a class="hdShare" href="javascript:;"><i class="fa fa-weixin"></i></a>
+                    <div class="hdWx">
+                        <img src="images/wchat.jpg" class="img-responsive">
+                        <p>扫一扫，关注我们</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="navBox hidden-xs hidden-sm">
+        	<ul class="navList list-unstyled">
+            	<li class="navLi on">
+                	<h3><a href="index.html"><span>首页</span></a></h3>
+                </li>
+            	<li class="navLi">
+                	<h3><a href="onepage.html"><span>关于我们</span></a></h3>
+                    <div class="navSub">
+                    	<ul class="navSubList list-unstyled">
+                        	<li class="navSubLi">
+                            	<h4><a href="onepage.html">公司介绍</a></h4>                                
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="onepage.html">大事记</a></h4>
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="artlist.html">新闻中心</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            	<li class="navLi">
+                	<h3><a href="#"><span>产品与服务</span></a></h3>
+                    <div class="navSub">
+                    	<ul class="navSubList list-unstyled">
+                        	<li class="navSubLi">
+                            	<h4><a href="jishutuiguang.html">技术推广</a></h4>
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="ruanjian.html">软件设计开发</a></h4>
+                            </li>
+                        	<li class="navSubLi">
+                                    <li class="navThrLi">
+                                        <h5><a href="guanggaosheji.html">广告设计制作</a></h5>
+                                        <ul class="navFouList list-unstyled">
+                                            <li class="navFouLi"><a href="#">电商设计</a></li>
+                                            <li class="navFouLi"><a href="#">画册设计</a></li>
+                                            <li class="navFouLi"><a href="#">名片设计</a></li>
+                                            <li class="navFouLi"><a href="#">网站设计</a></li>
+                                            <li class="navFouLi"><a href="#">海报设计</a></li>
+                                            <li class="navFouLi"><a href="#">办公文化设计</a></li>
+                                        </ul>
+                                    </li>
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="jisuanjipeixun.html">计算机培训</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="#">应用软件服务</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>                
+                <li class="navLi">
+                	<h3><a href="case.html"><span>案例</span></a></h3>
+                    <div class="navSub">
+                    	<ul class="navSubList list-unstyled">
+                        	<li class="navSubLi">
+                            	<h4><a href="honour.html">网站设计与开发案例</a></h4>                                
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="honour1.html">广告设计制作案例</a></h4>
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="honour2.html">软件设计开发案例</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navLi">
+                	<h3><a href="contact.html"><span>联系我们</span></a></h3>
+                    <div class="navSub">
+                    	<ul class="navSubList list-unstyled">
+                        	<li class="navSubLi">
+                            	<h4><a href="partner.html">关于我们</a></h4>                                
+                            </li>
+                        	<li class="navSubLi">
+                            	<h4><a href="contact.html">联系我们</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navBoxm"></div>
+    </div>
+</header>
+<div class="clearfix"></div>
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide Ban1" style="background-image:url(images/banner01.jpg);">
+                <div class="ban1Bg"><div class="stars"></div></div>
+                <div class="container hidden-xs hidden-sm">
+
+                        <div class="ban1Con" style="height:65%; width:60%; position: absolute; left:0px; top:20%; box-shadow: 10px 0px  26px #010c28; " >
+                           <!--lunbo-->
+                           <div id="myCarousel" class="carousel slide">
+                               <!-- 轮播 指标 -->
+                           <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                           </ol>
+                            <!-- 轮播 项目 -->
+                            <div class="carousel-inner">
+                               <div class="item active">
+                                <img src="images/lun2.png" alt="First slide">
+                                <div class="carousel-caption"></div>
+                               </div>
+                            <div class="item">
+                               <img src="images/lun3.png" alt="Second slide">
+                               <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item">
+                            <img src="images/lun1.png" alt="Third slide">
+                             <div class="carousel-caption"></div>
+                           </div>
+                             <div class="item">
+                               <img src="images/lun4.png" alt="Second slide">
+                               <div class="carousel-caption"></div>
+                            </div>
+                         </div>
+                       <!-- 轮播 导航 -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="font-size:30px;">&lsaquo;
+                        </a>
+                       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                         </div>
+                       </div>
+                    	<div class="ban1Text ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <img src="images/ban1Text.png" class="img-responsive">
+                        <a href="onepage.html" class="banLink">了解详情 <img src="images/box1BotMore2.png"></a>
+                        </div> 
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              <!--   <div class="banMob"><a href="#"><img src="images/banner01M.jpg" class="img-responsive"></a></div> -->
+            </div>
+            <div class="swiper-slide Ban2" style="background-image:url(images/banner01.jpg);">
+                <div class="container hidden-xs hidden-sm">
+                	<div class="ban1Con">
+                    	<div class="ban1Text ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <img src="images/ban1Text.png" class="img-responsive">
+                            <a href="#" class="banLink">了解详情<img src="images/box1BotMore2.png"></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="banMob"><a href="#"><img src="images/banner02M.jpg" class="img-responsive"></a></div>
+            </div>
+        </div>
+    </div>
+    <a class="banBtn" href="javascript:;"></a>
+</div>
+<div class="box1Bg">
+	<div class="box1TopBg">
+    	<div class="container">
+        	<div class="box1Num text-center wow fadeInUp">
+            	<p>云曜科技今日访问量<span class="counter" data-counter-time="1000">70,573</span>个</p>
+            </div>
+            <div class="title text-center">
+            	<h2 class="wow fadeInUp">产品与服务</h2>
+                <div class="titleBrief wow fadeInUp">
+                	<p>北京云曜科技有限公司是一家专业从事 技术推广服务；软件开发； 应用软件服务；广告设计；广告制作 综合性业务的一家科技公司</p>
+                    <p style="color:red;">我们的宗旨是客户第一，客户至上的原则。满足客户的各种需求，
+                    提供一站式服务，让客户没有后顾之忧。</p>
+                    <p style="color:red;">企业宗旨：用户至上，信誉取胜，质量优良，服务优质。</p>
+                    <p style="color:red;">我们承诺：会给客户完美的服务以及让您满意的答卷。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box1CenBg">
+    	<div class="wavesBg">
+    		<canvas id="waves" class="waves"></canvas>
+        </div>
+    	<div class="container">
+        	<div class="box1Cen wow fadeInUp">
+            	<div class="swiper-container">
+                	<div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                            <div class="box1CenText">
+                                <h3 class="box1CenH3"><strong>网站设计与开发</strong></h3>
+                                <div class="box1CenBrief">
+                                    <p>我公司提供专业的设计人员与您一对一沟通，设计出方案进行开发，提供全方面帮助，并可进行后期维护。</p>
+                                </div>
+                                <ul class="box1CenItem list-unstyled row">
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">企业网站开发</a></li>
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">产品网站开发</a></li>
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">电子商务网站开发</a></li>
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">专卖网站开发</a></li>
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">静态网页</a></li>
+                                </ul>
+                                <div class="box1BotMore"><a href="#">了解详情 <img src="images/box1BotMore2.png" class="showsIn"></a></div>
+                            </div>
+                            <div class="box1CenImgBg">
+                                <div class="box1CenImg"><img src="images/box1CenImg1.png" class="img-responsive"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    	<div class="swiper-slide">
+                        	<div class="box1CenText">
+                            	<h3 class="box1CenH3"><strong>广告设计与制作</strong></h3>
+                                <div class="box1CenBrief">
+                                	<p>广告设计与制作是伴随着现代化媒体技术发展与现代艺术的新趋势而诞生的，本公司注重广告的艺术性、创意理念的设计性与媒体应用技术的完美结合。</p>              
+                                </div>
+                        <ul class="box1CenItem list-unstyled row">
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">电商设计</a></li>
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">办公文化设计</a></li>
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">画册设计</a></li>
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">网站设计</a></li>
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">名片设计</a></li>
+                            <li class="col-sm-12 col-md-6 ellipsis"><a href="#">海报设计</a></li>
+                        </ul>
+                                <div class="box1BotMore"><a href="#">了解详情 <img src="images/box1BotMore2.png" class="showsIn"></a></div>
+                            </div>
+                            <div class="box1CenImgBg">
+                            	<div class="box1CenImg"><img src="images/box1CenImg.png" class="img-responsive"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                           <!--翻页-->
+                        <div class="swiper-slide">
+                            <div class="box1CenText">
+                                <h3 class="box1CenH3"><strong>软件设计开发</strong></h3>
+                                <div class="box1CenBrief">
+                                    <p>软件开发是根据用户要求建造出软件系统或者系统中的软件部分的过程。软件开发是一项包括需求捕捉、需求分析、设计、实现和测试的系统工程。</p>
+                                </div>
+                                <ul class="box1CenItem list-unstyled row">
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">AO办公软件系统</a></li>
+                                    <li class="col-sm-12 col-md-6 ellipsis"><a href="#">CRM系统定制</a></li>
+                                </ul>
+                                <div class="box1BotMore"><a href="#">了解详情 <img src="images/box1BotMore2.png" class="showsIn"></a></div>
+                            </div>
+                            <div class="box1CenImgBg">
+                                <div class="box1CenImg"><img src="images/box1CenImg.png" class="img-responsive"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <span class="box1CenPrev"></span>
+                <span class="box1CenNext"></span>
+            </div>
+        </div>
+    </div>
+    <div class="box1BotBg">
+    	<div class="container">
+        	<ul class="box1Bot list-unstyled row text-center">
+            	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+                	<a href="#">
+                    	<div class="box1BotImgBg">
+                        	<div class="box1BotCir"></div>
+                            <div class="box1BotImg"><img src="images/box1BotImg1.png" class="img-responsive"></div>
+                        </div>
+                        <h3 class="box1BotH3 ellipsis">广告设计制作</h3>
+                        <div class="box1BotBrief">
+                        	<p>多年的广告设计制作经验，给您更好的专业服务</p>
+                        </div>
+                        <div class="box1BotMore">了解详情 <img src="images/box1BotMore1.png" class="showsIn"><img src="images/box1BotMore2.png" class="hides"></div>
+                    </a>
+                </li>
+            	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+                	<a href="#">
+                    	<div class="box1BotImgBg">
+                        	<div class="box1BotCir"></div>
+                            <div class="box1BotImg"><img src="images/box1BotImg2.png" class="img-responsive"></div>
+                        </div>
+                        <h3 class="box1BotH3 ellipsis">网站设计开发</h3>
+                        <div class="box1BotBrief">
+                        	<p>依托雄厚的技术，帮您开发满意的网站</p>
+                        </div>
+                        <div class="box1BotMore">了解详情 <img src="images/box1BotMore1.png" class="showsIn"><img src="images/box1BotMore2.png" class="hides"></div>
+                    </a>
+                </li>
+            	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+                	<a href="#">
+                    	<div class="box1BotImgBg">
+                        	<div class="box1BotCir"></div>
+                            <div class="box1BotImg"><img src="images/box1BotImg3.png" class="img-responsive"></div>
+                        </div>
+                        <h3 class="box1BotH3 ellipsis">软件设计开发</h3>
+                        <div class="box1BotBrief">
+                        	<p>软件开发是根据用户要求建造出软件系统或者系统中的软件部分的过程。软件开发是一项包括需求捕捉、需求分析、设计、实现和测试的系统工程。</p>
+                        </div>
+                        <div class="box1BotMore">了解详情 <img src="images/box1BotMore1.png" class="showsIn"><img src="images/box1BotMore2.png" class="hides"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="box2Bg">
+	<div class="container">
+        <div class="title text-center">
+            <h2 class="wow fadeInUp">开发以及设计案例</h2>
+            <div class="titleBrief wow fadeInUp">
+                <p>云耀科技帮客户制作想要的各种设计方案以及开发，让客户没有后顾之忧</p>
+            </div>
+        </div>
+        <ul class="box2List list-unstyled row">
+        	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+            	<div class="box2Con">
+                	<div class="box2Img"><img src="images/box2Img1.jpg" class="img-responsive"></div>
+                    <h3 class="box2Tit"><span class="ellipsis">广告设计 制作案例</span></h3>
+                    <div class="box2HovBg">
+                        <div class="box2Hov">
+                            <h4 class="ellipsis"><strong>广告设计 制作案例</strong></h4>
+                            <div class="box2Item">
+                                <p><a class="ellipsis" href="#">画册设计案例</a></p>
+                                <p><a class="ellipsis" href="#">产品画册设计案例</a></p>
+                                <p><a class="ellipsis" href="#">海报设计案例</a></p>
+                                <p><a class="ellipsis" href="#">宣传海报设计案例</a></p>
+                                <p><a class="ellipsis" href="#">户外广告招贴案例</a></p>
+                                <p><a class="ellipsis" href="#">A4宣传案例</a></p>
+                                <p><a class="ellipsis" href="#">礼品办公文化设计案例</a></p>
+                                <p><a class="ellipsis" href="#">广告宣传设计案例</a></p>
+                                <p><a class="ellipsis" href="#">礼品卡片设计案例</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+            	<div class="box2Con">
+                	<div class="box2Img"><img src="images/box2Img2.jpg" class="img-responsive"></div>
+                    <h3 class="box2Tit"><span class="ellipsis">网站设计开发案例</span></h3>
+                    <div class="box2HovBg">
+                        <div class="box2Hov">
+                            <h4 class="ellipsis"><strong>网站设计开发案例</strong></h4>
+                            <div class="box2Item">
+                                <p><a class="ellipsis" href="#">企业网站设计开发案例</a></p>
+                                <p><a class="ellipsis" href="#">产品网站设计开发案例</a></p>
+                                <p><a class="ellipsis" href="#">电子商务网站设计开发案例</a></p>
+                                <p><a class="ellipsis" href="#">专卖网站设计开发案例</a></p>
+                                <p><a class="ellipsis" href="#">静态网页、动态网站设计开发案例</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        	<li class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp">
+            	<div class="box2Con">
+                	<div class="box2Img"><img src="images/box2Img3.jpg" class="img-responsive"></div>
+                    <h3 class="box2Tit"><span class="ellipsis">软件设计开发案例</span></h3>
+                    <div class="box2HovBg">
+                        <div class="box2Hov">
+                            <h4 class="ellipsis"><strong>软件设计开发案例</strong></h4>
+                            <div class="box2Item">
+                                <p><a class="ellipsis" href="#">AO办公软件系统</a></p>
+                                <p><a class="ellipsis" href="#">CRM系统定制</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="box3Bg">
+	<div class="container">
+        <div class="title text-center wow fadeInUp">
+            <h2>我们与为客户提供最精准的服务</h2>
+            <div class="titleBrief wow fadeInUp">
+                <p>北京云曜科技有限公司是一家专业从事 技术推广服务；软件开发；  应用软件服务；广告设计；广告制作 综合性业务的一家科技公司
+                    我们的宗旨是客户第一，客户至上的原则。满足客户的各种需求，
+                    提供一站式服务，让客户没有后顾之忧。
+                  企业宗旨：用户至上，信誉取胜，质量优良，服务优质。
+                    我们承诺：会给客户完美的服务以及让您满意的答卷。</p>
+            </div>
+        </div>
+        <div class="box3List wow fadeInUp">
+        	<div class="swiper-container">
+            	<div class="swiper-wrapper">
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img1.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img1a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img6.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img6a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img2.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img2a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img7.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img7a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img3.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img3a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img8.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img8a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img4.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img4a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img9.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img9a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img5.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img5a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img10.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img10a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img1.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img1a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img6.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img6a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img2.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img2a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img7.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img7a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img3.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img3a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img8.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img8a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img4.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img4a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img9.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img9a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img5.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img5a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img10.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img10a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img1.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img1a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img6.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img6a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img2.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img2a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img7.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img7a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img3.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img3a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img8.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img8a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img4.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img4a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img9.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img9a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img5.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img5a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="">
+                        	<div class="box3Img"><img src="images/box3Img10.jpg" class="img-responsive"></div>
+                            <div class="box3Hov"><img src="images/box3Img10a.jpg" class="img-responsive"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+			<span class="swiper-pagination"></span>
+        </div>
+    </div>
+</div>
+<div class="box4Bg">
+	<div id="box4BgId" class="hidden-xs"><div id="anitOut"></div></div>
+	<div class="container">
+        <div class="title text-center">
+            <h2 class="wow fadeInUp">千万 客户的选择</h2>
+            <div class="titleBrief wow fadeInUp">
+                <p>北京云曜科技有限公司是一家专业从事 技术推广服务；软件开发； 应用软件服务；广告设计；广告制作 综合性业务的一家科技公司 我们的宗旨是客户第一，客户至上的原则。满足客户的各种需求， 提供一站式服务，让客户没有后顾之忧。 企业宗旨：用户至上，信誉取胜，质量优良，服务优质。 我们承诺：会给客户完美的服务以及让您满意的答卷。</p>
+            </div>
+        </div>
+        <div class="box4List wow fadeInUp">
+        	<div class="swiper-container">
+            	<div class="swiper-wrapper">
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img1.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">广告设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img6.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">200</span>+</p>
+                            <h3 class="box4Tit">产品画册</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img2.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">600</span>+</p>
+                            <h3 class="box4Tit">宣传册</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img7.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">20</span>+</p>
+                            <h3 class="box4Tit">网站设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img3.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">800</span>+</p>
+                            <h3 class="box4Tit">网站开发</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img8.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">100</span>+</p>
+                            <h3 class="box4Tit">企业网站</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img4.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">50</span>+</p>
+                            <h3 class="box4Tit">专卖网站</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img9.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">150</span>+</p>
+                            <h3 class="box4Tit">海报设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img5.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">户外广告招贴</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img10.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">A4宣传</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img1.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">办公文化设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img6.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">200</span>+</p>
+                            <h3 class="box4Tit">礼品卡片设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img2.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">600</span>+</p>
+                            <h3 class="box4Tit">广告页面设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img7.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">20</span>+</p>
+                            <h3 class="box4Tit">电商设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img3.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">800</span>+</p>
+                            <h3 class="box4Tit">电子商务网站</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img8.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">100</span>+</p>
+                            <h3 class="box4Tit">电商企业设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img4.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">50</span>+</p>
+                            <h3 class="box4Tit">电商图片</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img9.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">150</span>+</p>
+                            <h3 class="box4Tit">画册设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img5.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">静态网页</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img10.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">动态网站</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img1.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">10</span>+</p>
+                            <h3 class="box4Tit">活动专题页面</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img6.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">200</span>+</p>
+                            <h3 class="box4Tit">报纸广告页面</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img2.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">600</span>+</p>
+                            <h3 class="box4Tit">杂志插页</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img7.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">20</span>+</p>
+                            <h3 class="box4Tit">名片设计</h3>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                    	<a href="javascript:;">
+                        	<div class="box4Img"><img src="images/box4Img3.png" class="img-responsive"></div>
+                            <p class="box4Num"><span class="counter" data-counter-time="1000">800</span>+</p>
+                            <h3 class="box4Tit">购物商城设计</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+			<span class="swiper-pagination"></span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="footerBg">
+	<div class="container">
+    	<div class="footTop">
+        	<div class="footTopR text-right">
+            	<a href="#" class="kefu"><img src="images/kefu.png"> 在线客服</a>
+                <div class="clear"></div>
+                <p class="fTel">010-1111111</p>
+                <p>（周一至周五8:30-17:30）</p>
+            </div>
+            <div class="footTopL">
+            	<ul class="footLink list-unstyled list-inline">
+                	<li>
+                    	<h3><a class="ellipsis" href="#">关于我们</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">公司介绍</a></p>
+                        	<p><a class="ellipsis" href="#">大事记</a></p>
+                        	<p><a class="ellipsis" href="#">资质荣誉</a></p>
+                        	<p><a class="ellipsis" href="#">新闻中心</a></p>
+                        </div>
+                    </li>
+                	<li>
+                    	<h3><a class="ellipsis" href="#">产品与服务</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">网站设计与开发</a></p>
+                        	<p><a class="ellipsis" href="#">广告设计与制作</a></p>
+                        	<p><a class="ellipsis" href="#">软件设计开发</a></p>
+                        	<p><a class="ellipsis" href="#">技术推广</a></p>
+                        	<p><a class="ellipsis" href="#">应用软件服务</a></p>
+                            <p><a class="ellipsis" href="#">计算机培训</a></p>
+                        </div>
+                    </li>
+                	<li>
+                    	<h3><a class="ellipsis" href="#">开发以及设计案例</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">广告设计制作案例</a></p>
+                        	<p><a class="ellipsis" href="#">网站设计开发案例</a></p>
+                        	<p><a class="ellipsis" href="#">软件设计开发案例</a></p>
+                        </div>
+                    </li>
+                	<li>
+                    	<h3><a class="ellipsis" href="#">案例</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">画册设计</a></p>
+                        	<p><a class="ellipsis" href="#">产品画册</a></p>
+                        	<p><a class="ellipsis" href="#">企业网站开发</a></p>
+                        	<p><a class="ellipsis" href="#">产品网站</a></p>
+                            <p><a class="ellipsis" href="#">活动专题页面</a></p>
+                            <p><a class="ellipsis" href="#">专卖网站</a></p>
+                            <p><a class="ellipsis" href="#">静态网页</a></p>
+                            <p><a class="ellipsis" href="#">动态网站</a></p>
+                            <p><a class="ellipsis" href="#">海报设计</a></p>
+                            <p><a class="ellipsis" href="#">宣传海报</a></p>
+                        </div>
+                    </li>
+                	<li>
+                    	<h3><a class="ellipsis" href="#">联系我们</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">关于我们</a></p>
+                        	<p><a class="ellipsis" href="#">联系我们</a></p>
+                        </div>
+                    </li>
+                	<li>
+                    	<h3><a class="ellipsis" href="#">在线客服</a></h3>
+                        <div class="footSub">
+                        	<p><a class="ellipsis" href="#">客服中心</a></p>
+                        	<p><a class="ellipsis" href="#">投诉意见</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    	<div class="footBot">
+        	<img src="images/footLogo.png" class="footLogo">
+        	<p>Copyright © 2001-2015 istarshine.com.All rights reserved.  京ICP备1200xxx号-1  京公网安xxx8号 </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+<ul class="online list-unstyled">
+	<li>
+    	<a class="onlineIco" href="#">
+        	<i class="fa fa-qq"></i>
+        	<div class="onlineCon">在线客服</div>
+        </a>
+    </li>
+	<li>
+    	<a class="onlineIco" href="#">
+        	<i class="fa fa-phone"></i>
+        	<div class="onlineCon">010-1111111</div>
+        </a>
+    </li>	
+	<li>
+    	<a class="onlineIco" href="#">
+        	<i class="fa fa-weixin"></i>
+        	<div class="onlineCon">扫码关注</div>
+        </a>
+        <div class="onlineWx">
+        	<img src="images/wchat.jpg" class="img-responsive">
+        </div>
+    </li>
+	<li class="online_top">
+    	<a class="onlineIco" href="javascript:;">
+        	<i class="fa fa-arrow-up"></i>
+        	<div class="onlineCon">返回顶部</div>
+        </a>
+    </li>
+</ul>
+<script src="js/star/three.min.js"></script>
+<script src="js/star/Detector.js"></script> 
+<script src="js/star/stats.min.js"></script>
+<script>
+	var sUserAgent = navigator.userAgent.toLowerCase(); 
+	if(!(sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		
+	if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+	
+	var container, stats;
+	var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color, size;
+	var mouseX = 0, mouseY = 0;
+
+	var windowHalfX = window.innerWidth / 2;
+	var windowHalfY = window.innerHeight / 2;
+
+	init();
+	animate();
+
+	function init() {
+
+		//container = document.getElementById("stars" );
+		container = $(".stars");
+
+		camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 2000 );
+		camera.position.z = 1000;
+
+		scene = new THREE.Scene();
+		scene.fog = new THREE.FogExp2( 0xffffff, 0.0007 );
+
+		geometry = new THREE.Geometry();
+
+		for ( i = 0; i < 400; i ++ ) {
+
+			var vertex = new THREE.Vector3();
+			vertex.x = Math.random() * 3000 - 1000;
+			vertex.y = Math.random() * 3000 - 1000;
+			vertex.z = Math.random() * 3000 - 1000;
+
+			geometry.vertices.push( vertex );
+
+		}
+
+		parameters = [
+			[ [1, 1, 1], 5 ],
+			[ [1, 1, 1], 4 ],
+			[ [1, 1, 1], 3 ],
+			[ [0, 1, 0], 2 ],
+			[ [1, 1,0], 1 ]
+		];
+
+		for ( i = 0; i < parameters.length; i ++ ) {
+
+			color  = parameters[i][0];
+			sprite = parameters[i][1];
+			size   = parameters[i][2];
+
+			materials[i] = new THREE.PointCloudMaterial( { size: size } );
+			materials[i].color.setHSL( color[0], color[1], color[2] );
+
+			particles = new THREE.Points( geometry, materials[i] );
+
+			particles.rotation.x = Math.random() * 6;
+			particles.rotation.y = Math.random() * 6;
+			particles.rotation.z = Math.random() * 6;
+
+			scene.add( particles );
+
+		}
+
+		renderer = new THREE.WebGLRenderer({alpha:true});
+		renderer.setPixelRatio( window.devicePixelRatio );
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		//container.appendChild( renderer.domElement );
+		container.each(function(index, element) {
+            this.appendChild( renderer.domElement );
+        });
+		/*stats = new Stats();
+		container.appendChild( stats.dom );*/
+		container.each(function(index, element) {
+			stats = new Stats();
+			this.appendChild( stats.dom );
+        });
+
+		document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+		document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+		document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+		//
+
+		window.addEventListener( 'resize', onWindowResize, false );
+
+	}
+
+	function onWindowResize() {
+
+		windowHalfX = window.innerWidth / 2;
+		windowHalfY = window.innerHeight / 2;
+
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+
+		renderer.setSize( window.innerWidth, window.innerHeight );
+
+	}
+
+	function onDocumentMouseMove( event ) {
+
+		mouseX = event.clientX - windowHalfX;
+		mouseY = event.clientY - windowHalfY;
+
+	}
+
+	function onDocumentTouchStart( event ) {
+
+		if ( event.touches.length === 1 ) {
+
+			event.preventDefault();
+
+			mouseX = event.touches[ 0 ].pageX - windowHalfX;
+			mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+		}
+
+	}
+
+	function onDocumentTouchMove( event ) {
+
+		if ( event.touches.length === 1 ) {
+
+			event.preventDefault();
+
+			mouseX = event.touches[ 0 ].pageX - windowHalfX;
+			mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+		}
+
+	}
+
+	//
+
+	function animate() {
+
+		requestAnimationFrame( animate );
+
+		render();
+		stats.update();
+
+	}
+
+	function render() {
+
+		var time = Date.now() * 0.00005;
+
+		camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+		camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+
+		camera.lookAt( scene.position );
+
+		for ( i = 0; i < scene.children.length; i ++ ) {
+
+			var object = scene.children[ i ];
+
+			if ( object instanceof THREE.Points ) {
+
+				object.rotation.y = time * ( i < 4 ? i + 1 : - ( i + 1 ) );
+
+			}
+
+		}
+
+		for ( i = 0; i < materials.length; i ++ ) {
+
+			color = parameters[i][0];
+
+			h = ( 360 * ( color[0] + time ) % 360 ) / 360;
+			materials[i].color.setHSL( h, color[1], color[2] );
+
+		}
+
+		renderer.render( scene, camera );
+
+	}	
+
+	}
+</script>
+<script>
+$(function () {
+    if (!window.ActiveXObject && !!document.createElement("canvas").getContext) {
+        $.getScript("cav.js",
+                function () {
+                    var t = {
+                        width: 1.45,
+                        height: 1.5,
+                        depth: 10,
+                        segments: 12,
+                        slices: 6,
+                        xRange: 0.8,
+                        yRange: 0.1,
+                        zRange: 1,
+                        ambient: "#525252",
+                        diffuse: "#525252",
+                        speed: 0.0002
+                    };
+                    var G = {
+                        count: 2,
+                        xyScalar: 1,
+                        zOffset: 100,
+                        ambient: "#214690",
+                        diffuse: "#234d9f",
+                        speed: 0.001,
+                        gravity: 1200,
+                        dampening: 0.95,
+                        minLimit: 10,
+                        maxLimit: null,
+                        minDistance: 20,
+                        maxDistance: 400,
+                        autopilot: false,
+                        draw: false,
+                        bounds: CAV.Vector3.create(),
+                        step: CAV.Vector3.create(Math.randomInRange(0.2, 1), Math.randomInRange(0.2, 1), Math.randomInRange(0.2, 1))
+                    };
+                    var m = "canvas";
+                    var E = "svg";
+                    var x = {
+                        renderer: m
+                    };
+                    var i, n = Date.now();
+                    var L = CAV.Vector3.create();
+                    var k = CAV.Vector3.create();
+                    var z = document.getElementById("box4BgId");
+                    var w = document.getElementById("anitOut");
+                    var D, I, h, q, y;
+                    var g;
+                    var r;
+
+                    function C() {
+                        F();
+                        p();
+                        s();
+                        B();
+                        v();
+                        K(z.offsetWidth, z.offsetHeight);
+                        o()
+                    }
+
+                    function F() {
+                        g = new CAV.CanvasRenderer();
+                        H(x.renderer)
+                    }
+
+                    function H(N) {
+                        if (D) {
+                            w.removeChild(D.element)
+                        }
+                        switch (N) {
+                            case m:
+                                D = g;
+                                break
+                        }
+                        D.setSize(z.offsetWidth, z.offsetHeight);
+                        w.appendChild(D.element)
+                    }
+
+                    function p() {
+                        I = new CAV.Scene()
+                    }
+                    function s() {
+                        I.remove(h);
+                        D.clear();
+                        q = new CAV.Plane(t.width * D.width, t.height * D.height, t.segments, t.slices);
+                        y = new CAV.Material(t.ambient, t.diffuse);
+                        h = new CAV.Mesh(q, y);
+                        I.add(h);
+                        var N, O;
+                        for (N = q.vertices.length - 1; N >= 0; N--) {
+                            O = q.vertices[N];
+                            O.anchor = CAV.Vector3.clone(O.position);
+                            O.step = CAV.Vector3.create(Math.randomInRange(0.2, 1), Math.randomInRange(0.2, 1), Math.randomInRange(0.2, 1));
+                            O.time = Math.randomInRange(0, Math.PIM2)
+                        }
+                    }
+
+                    function B() {
+                        var O, N;
+                        for (O = I.lights.length - 1; O >= 0; O--) {
+                            N = I.lights[O];
+                            I.remove(N)
+                        }
+                        D.clear();
+                        for (O = 0; O < G.count; O++) {
+                            N = new CAV.Light(G.ambient, G.diffuse);
+                            N.ambientHex = N.ambient.format();
+                            N.diffuseHex = N.diffuse.format();
+                            I.add(N);
+                            N.mass = Math.randomInRange(0.5, 1);
+                            N.velocity = CAV.Vector3.create();
+                            N.acceleration = CAV.Vector3.create();
+                            N.force = CAV.Vector3.create()
+                        }
+                    }
+
+                    function K(O, N) {
+                        D.setSize(O, N);
+                        CAV.Vector3.set(L, D.halfWidth, D.halfHeight);
+                        s()
+                    }
+
+                    function o() {
+                        i = Date.now() - n;
+                        u();
+                        M();
+                        requestAnimationFrame(o)
+                    }
+
+                    function u() {
+                        var Q, P, O, R, T, V, U, S = t.depth / 2;
+                        CAV.Vector3.copy(G.bounds, L);
+                        CAV.Vector3.multiplyScalar(G.bounds, G.xyScalar);
+                        CAV.Vector3.setZ(k, G.zOffset);
+                        for (R = I.lights.length - 1; R >= 0; R--) {
+                            T = I.lights[R];
+                            CAV.Vector3.setZ(T.position, G.zOffset);
+                            var N = Math.clamp(CAV.Vector3.distanceSquared(T.position, k), G.minDistance, G.maxDistance);
+                            var W = G.gravity * T.mass / N;
+                            CAV.Vector3.subtractVectors(T.force, k, T.position);
+                            CAV.Vector3.normalise(T.force);
+                            CAV.Vector3.multiplyScalar(T.force, W);
+                            CAV.Vector3.set(T.acceleration);
+                            CAV.Vector3.add(T.acceleration, T.force);
+                            CAV.Vector3.add(T.velocity, T.acceleration);
+                            CAV.Vector3.multiplyScalar(T.velocity, G.dampening);
+                            CAV.Vector3.limit(T.velocity, G.minLimit, G.maxLimit);
+                            CAV.Vector3.add(T.position, T.velocity)
+                        }
+                        for (V = q.vertices.length - 1; V >= 0; V--) {
+                            U = q.vertices[V];
+                            Q = Math.sin(U.time + U.step[0] * i * t.speed);
+                            P = Math.cos(U.time + U.step[1] * i * t.speed);
+                            O = Math.sin(U.time + U.step[2] * i * t.speed);
+                            CAV.Vector3.set(U.position, t.xRange * q.segmentWidth * Q, t.yRange * q.sliceHeight * P, t.zRange * S * O - S);
+                            CAV.Vector3.add(U.position, U.anchor)
+                        }
+                        q.dirty = true
+                    }
+
+                    function M() {
+                        D.render(I)
+                    }
+
+                    function J(O) {
+                        var Q, N, S = O;
+                        var P = function (T) {
+                            for (Q = 0, l = I.lights.length; Q < l; Q++) {
+                                N = I.lights[Q];
+                                N.ambient.set(T);
+                                N.ambientHex = N.ambient.format()
+                            }
+                        };
+                        var R = function (T) {
+                            for (Q = 0, l = I.lights.length; Q < l; Q++) {
+                                N = I.lights[Q];
+                                N.diffuse.set(T);
+                                N.diffuseHex = N.diffuse.format()
+                            }
+                        };
+                        return {
+                            set: function () {
+                                P(S[0]);
+                                R(S[1])
+                            }
+                        }
+                    }
+
+                    function v() {
+                        window.addEventListener("resize", j)
+                    }
+
+                    function A(N) {
+                        CAV.Vector3.set(k, N.x, D.height - N.y);
+                        CAV.Vector3.subtract(k, L)
+                    }
+
+                    function j(N) {
+                        K(z.offsetWidth, z.offsetHeight);
+                        M()
+                    }
+
+                    C();
+                })
+    }/* else {
+        alert('调用cav.js失败');
+    }*/
+});
+</script>
+<script src="js/waves.js"></script>
+</body>
+</html>

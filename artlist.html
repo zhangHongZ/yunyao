@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>新闻中心</title>
+    <meta name="description" content="Description...">
+    <meta name="keywords" content="keyword1,keyword2,keyword3..">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/bootsnav.css" rel="stylesheet">
+    <link href="plugin/swiper3/css/swiper.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.10.1.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <script src="plugin/swiper3/js/swiper.min.js"></script>
+    <script src="plugin/swiper3/js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+    });
+    wow.init();
+    </script>
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.min.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->    
+    <script>
+    	function scro(){
+			if($(document).scrollTop()>50){$(".headerBg").addClass("active");}else{$(".headerBg").removeClass("active");}
+		}
+		scro();
+		$(window).scroll(function(){
+			scro();
+		})
+    </script>
+</head>
+<body>
+<header class="headerBg navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="logo"><a href="#"><img src="images/logo.png" class="img-responsive" alt=""></a></div>
+        <div class="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hdRig">
+            <ul class="hdRigList list-unstyled">
+                <li><a class="hdTel" href="tel:010-52722366"><i class="fa fa-phone"></i></a><span>010-52xxxx366</span></li>
+                <li><a class="hdShare" href="javascript:;"><i class="fa fa-weibo"></i></a></li>
+                <li><a class="hdShare" href="javascript:;"><i class="fa fa-weixin"></i></a>
+                    <div class="hdWx">
+                        <img src="images/wchat.jpg" class="img-responsive">
+                        <p>扫一扫，关注我们</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="navBox hidden-xs hidden-sm">
+            <ul class="navList list-unstyled">
+                <li class="navLi on">
+                    <h3><a href="index.html"><span>首页</span></a></h3>
+                </li>
+                <li class="navLi">
+                    <h3><a href="onepage.html"><span>关于我们</span></a></h3>
+                    <div class="navSub">
+                        <ul class="navSubList list-unstyled">
+                            <li class="navSubLi">
+                                <h4><a href="onepage.html">公司介绍</a></h4>                                
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="onepage.html">大事记</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="artlist.html">新闻中心</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navLi">
+                    <h3><a href="#"><span>产品与服务</span></a></h3>
+                    <div class="navSub">
+                        <ul class="navSubList list-unstyled">
+                            <li class="navSubLi">
+                                <h4><a href="jishutuiguang.html">技术推广</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="ruanjian.html">软件设计开发</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                    <li class="navThrLi">
+                                        <h5><a href="guanggaosheji.html">广告设计制作</a></h5>
+                                        <ul class="navFouList list-unstyled">
+                                            <li class="navFouLi"><a href="#">电商设计</a></li>
+                                            <li class="navFouLi"><a href="#">画册设计</a></li>
+                                            <li class="navFouLi"><a href="#">名片设计</a></li>
+                                            <li class="navFouLi"><a href="#">网站设计</a></li>
+                                            <li class="navFouLi"><a href="#">海报设计</a></li>
+                                            <li class="navFouLi"><a href="#">办公文化设计</a></li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="jisuanjipeixun.html">计算机培训</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="#">应用软件服务</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>                
+                <!-- <li class="navLi">
+                    <h3><a href="#"><span>设计方案</span></a></h3>
+                    <div class="navSub">
+                        <ul class="navSubList list-unstyled">
+                            <li class="navSubLi">
+                                <h4><a href="#">网站设计与开发方案</a></h4>                                
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="#">广告设计制作方案</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="#">软件设计开发方案</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li class="navLi">
+                    <h3><a href="case.html"><span>案例</span></a></h3>
+                    <div class="navSub">
+                        <ul class="navSubList list-unstyled">
+                            <li class="navSubLi">
+                                <h4><a href="honour.html">网站设计与开发案例</a></h4>                                
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="honour1.html">广告设计制作案例</a></h4>
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="honour2.html">软件设计开发案例</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navLi">
+                    <h3><a href="contact.html"><span>联系我们</span></a></h3>
+                    <div class="navSub">
+                        <ul class="navSubList list-unstyled">
+                            <li class="navSubLi">
+                                <h4><a href="partner.html">关于我们</a></h4>                                
+                            </li>
+                            <li class="navSubLi">
+                                <h4><a href="contact.html">联系我们</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navBoxm"></div>
+    </div>
+</header>
+<div class="clearfix"></div>
+<div class="bannerN">
+	<div class="imgFull"><img src="images/banNews.jpg" class="img-responsive"></div>
+    <h2 class="banH2 wow fadeInUp">关于我们</h2>
+</div>
+<div class="mainBg">
+	<div class="onepage">
+        <ul class="artlist list-unstyled">
+            <li class="wow fadeInUp">
+                <div class="container">
+                    <a href="#">
+                        <div class="arImg">
+                            <img src="images/arImg1.jpg" class="img-responsive">
+                            <div class="arTime">
+                                <p class="date">07</p>
+                                <p class="month text-uppercase">Apr</p>
+                            </div>
+                        </div>
+                        <div class="arText">
+                            <h3 class="arTit ellipsis">测试阻碍软件快速开发？「喵星云」认为自动化测试是未来的发展方向</h3>
+                            <div class="arBrief">
+                                <p>软件工具需要经过开发-编译-部署-测试，目前编译和部署是可自动化的，开发和测试还需要人参与。其中测试占据了30%以上的整体开发成本。软件测试最早的作业方式是手动测试，直到测试工具的出现形成了半自动化测试方式，几年前北美地区开始往自动化测试发展，最大程度将重复性测试工作交给机器。</p>
+                                <!--http://tech.ifeng.com/a/20180307/44898163_0.shtml-->
+                            </div>
+                            <div class="arBot">
+                                <div class="pull-left"><i class="fa fa-eye"></i> 浏览(62)</div>
+                                <div class="pull-right">阅读全文 <i class="fa fa-angle-down"></i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="wow fadeInUp">
+                <div class="container">
+                    <a href="#">
+                        <div class="arImg">
+                            <img src="images/arImg2.jpg" class="img-responsive">
+                            <div class="arTime">
+                                <p class="date">31</p>
+                                <p class="month text-uppercase">Apr</p>
+                            </div>
+                        </div>
+                        <div class="arText">
+                            <h3 class="arTit ellipsis">育碧展示新 AI 软件，可以在 bug 出现之前就纠错</h3>
+                            <div class="arBrief">
+                                <p>节省了一大笔后期纠错成本，也让开发者可以关注更重要的事
+                                  在蒙特利尔举行的育碧开发者大会上，育碧展示了一款新的 AI 软件 Commit Assistant，它会在程序员出错前就介入其中，在 bug 诞生前将其扼杀。</p>
+                                  <!--http://www.orz520.com/a/game/2018/0306/10763134.html?from=haosou_news-->
+                            </div>
+                            <div class="arBot">
+                                <div class="pull-left"><i class="fa fa-eye"></i> 浏览(62)</div>
+                                <div class="pull-right">阅读全文 <i class="fa fa-angle-down"></i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="wow fadeInUp">
+                <div class="container">
+                    <a href="#">
+                        <div class="arImg">
+                            <img src="images/arImg3.jpg" class="img-responsive">
+                            <div class="arTime">
+                                <p class="date">07</p>
+                                <p class="month text-uppercase">Apr</p>
+                            </div>
+                        </div>
+                        <div class="arText">
+                            <h3 class="arTit ellipsis">对于网站建设开发商家和企业都应该注意的事</h3>
+                            <div class="arBrief">
+                                <p>随着电子商务的发展，很多企业都开始了解到，公司网站越来越重要，那么我们究竟应该怎么做好网站建设这件事，这件事不仅是企业的事情，也是众多开发商的事情。</p>
+                                <!--https://www.toutiao.com/i6527422593094386183/-->
+                            </div>
+                            <div class="arBot">
+                                <div class="pull-left"><i class="fa fa-eye"></i> 浏览(62)</div>
+                                <div class="pull-right">阅读全文 <i class="fa fa-angle-down"></i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="wow fadeInUp">
+                <div class="container">
+                    <a href="#">
+                        <div class="arImg">
+                            <img src="images/arImg4.jpg" class="img-responsive">
+                            <div class="arTime">
+                                <p class="date">31</p>
+                                <p class="month text-uppercase">Apr</p>
+                            </div>
+                        </div>
+                        <div class="arText">
+                            <h3 class="arTit ellipsis">全球软件巨头甲骨文公司落户襄阳 成立人才创新创业基地</h3>
+                            <div class="arBrief">
+                                <p>甲骨文做为全球企业500强（2017年美国财富排行榜位居第81位），目前是全球最大的信息管理软件及服务供应商，服务国内很多知名企业，例如：中国电信、联通、移动。包括世界级企业HP、IBM、PWC、埃森哲等，都在使用甲骨文Oracle技术作为支撑。甲骨文公司具有成熟的全球化IT教育实施经验、丰富的优秀IT教育资源和完备的实训资源支撑体系。</p>
+                                <!--http://sh.qihoo.com/pc/9fce2d1e5c811dc75?sign=360_e39369d1-->
+                            </div>
+                            <div class="arBot">
+                                <div class="pull-left"><i class="fa fa-eye"></i> 浏览(62)</div>
+                                <div class="pull-right">阅读全文 <i class="fa fa-angle-down"></i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="wow fadeInUp">
+                <div class="container">
+                    <a href="#">
+                        <div class="arImg">
+                            <img src="images/arImg5.jpg" class="img-responsive">
+                            <div class="arTime">
+                                <p class="date">31</p>
+                                <p class="month text-uppercase">Apr</p>
+                            </div>
+                        </div>
+                        <div class="arText">
+                            <h3 class="arTit ellipsis">广告策划|论广告设计的四要素</h3>
+                            <div class="arBrief">
+                                <p>无论是营销策划、还是品牌策划，其中设计的重要性毋庸置疑，自然广告策划也不例外，随着现在越来越多的广告会被过滤掉，但是那些精心设计与策划，富有创意的广告仍然能够打动人心，获得不少关注。那些广告不再是所谓的广告，而是为用户提供有价值的信息。因此，此篇小编与大家分享广告设计的四要素。</p>
+                                <!--https://www.toutiao.com/a6528243019567596045/-->
+                            </div>
+                            <div class="arBot">
+                                <div class="pull-left"><i class="fa fa-eye"></i> 浏览(62)</div>
+                                <div class="pull-right">阅读全文 <i class="fa fa-angle-down"></i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="page"><img src="images/page.png" class="img-responsive"></div>
+        </div>    
+    </div>
+</div>
+<footer class="footerBg">
+    <div class="container">
+        <div class="footTop">
+            <div class="footTopR text-right">
+                <a href="#" class="kefu"><img src="images/kefu.png"> 在线客服</a>
+                <div class="clear"></div>
+                <p class="fTel">010-1111111</p>
+                <p>（周一至周五8:30-17:30）</p>
+            </div>
+            <div class="footTopL">
+                <ul class="footLink list-unstyled list-inline">
+                    <li>
+                        <h3><a class="ellipsis" href="#">关于我们</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">公司介绍</a></p>
+                            <p><a class="ellipsis" href="#">大事记</a></p>
+                            <p><a class="ellipsis" href="#">资质荣誉</a></p>
+                            <p><a class="ellipsis" href="#">新闻中心</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a class="ellipsis" href="#">产品与服务</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">网站设计与开发</a></p>
+                            <p><a class="ellipsis" href="#">广告设计与制作</a></p>
+                            <p><a class="ellipsis" href="#">软件设计开发</a></p>
+                            <p><a class="ellipsis" href="#">技术推广</a></p>
+                            <p><a class="ellipsis" href="#">应用软件服务</a></p>
+                            <p><a class="ellipsis" href="#">计算机培训</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a class="ellipsis" href="#">开发以及设计案例</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">广告设计制作案例</a></p>
+                            <p><a class="ellipsis" href="#">网站设计开发案例</a></p>
+                            <p><a class="ellipsis" href="#">软件设计开发案例</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a class="ellipsis" href="#">案例</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">画册设计</a></p>
+                            <p><a class="ellipsis" href="#">产品画册</a></p>
+                            <p><a class="ellipsis" href="#">企业网站开发</a></p>
+                            <p><a class="ellipsis" href="#">产品网站</a></p>
+                            <p><a class="ellipsis" href="#">活动专题页面</a></p>
+                            <p><a class="ellipsis" href="#">专卖网站</a></p>
+                            <p><a class="ellipsis" href="#">静态网页</a></p>
+                            <p><a class="ellipsis" href="#">动态网站</a></p>
+                            <p><a class="ellipsis" href="#">海报设计</a></p>
+                            <p><a class="ellipsis" href="#">宣传海报</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a class="ellipsis" href="#">联系我们</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">关于我们</a></p>
+                            <p><a class="ellipsis" href="#">联系我们</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a class="ellipsis" href="#">在线客服</a></h3>
+                        <div class="footSub">
+                            <p><a class="ellipsis" href="#">客服中心</a></p>
+                            <p><a class="ellipsis" href="#">投诉意见</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footBot">
+            <img src="images/footLogo.png" class="footLogo">
+            <p>Copyright © 2001-2015 istarshine.com.All rights reserved.  京ICP备1200xxx号-1  京公网安xxx8号 </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+<ul class="online list-unstyled">
+    <li>
+        <a class="onlineIco" href="#">
+            <i class="fa fa-qq"></i>
+            <div class="onlineCon">在线客服</div>
+        </a>
+    </li>
+    <li>
+        <a class="onlineIco" href="#">
+            <i class="fa fa-phone"></i>
+            <div class="onlineCon">010-1111111</div>
+        </a>
+    </li>   
+    <li>
+        <a class="onlineIco" href="#">
+            <i class="fa fa-weixin"></i>
+            <div class="onlineCon">扫码关注</div>
+        </a>
+        <div class="onlineWx">
+            <img src="images/wchat.jpg" class="img-responsive">
+        </div>
+    </li>
+    <li class="online_top">
+        <a class="onlineIco" href="javascript:;">
+            <i class="fa fa-arrow-up"></i>
+            <div class="onlineCon">返回顶部</div>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
